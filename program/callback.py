@@ -44,7 +44,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
+                        "🌐 Dev", url="https://t.me/i_am_albin_praveen"
                     )
                 ],
             ]
@@ -156,7 +156,7 @@ async def cbsudo(_, query: CallbackQuery):
 » /rmd - clean all downloaded files
 » /leaveall - order userbot to leave from all group
 
-⚡ __Powered by {BOT_NAME} AI__""",
+⚡ __Powered by @i_am_albin_praveen""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
