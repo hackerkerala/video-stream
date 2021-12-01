@@ -63,8 +63,8 @@ async def skip(client, m: Message):
         elif op == 1:
             await m.reply("✅ __Queues__ is empty.\n\n• userbot leaving voice chat")
         else:
-            await m.reply_photo(
-                photo=f"{IMG_3}",
+            await m.reply_video(
+                video=f"{IMG_3}",
                 caption=f"⏭ **Skipped to the next track.**\n\n🏷 **Name:** [{op[0]}]({op[1]})\n💭 **Chat:** `{chat_id}`\n💡 **Status:** `Playing`\n🎧 **Request by:** {m.from_user.mention()}",
                 reply_markup=keyboard,
             )
