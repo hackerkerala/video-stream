@@ -75,10 +75,7 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
+                    )
                 ],
                 [
                     InlineKeyboardButton(
@@ -106,13 +103,13 @@ async def alive(client: Client, message: Message):
             [
                 InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "📣 Support", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n[🍀](https://telegra.ph/file/005de39b81113102c30d7.jpg) My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤  Support @musicwithalby ,Bugreport:i_am_albin_praveen"
+    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n[🍀](https://telegra.ph/file/005de39b81113102c30d7.jpg) My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 PyTgCalls version: `{pytover.__version__}`\n✨ Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing video & music on your Group's video chat** ❤  \n Support @musicwithalby \n Bugreport:i_am_albin_praveen"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
