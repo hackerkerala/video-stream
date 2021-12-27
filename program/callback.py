@@ -16,7 +16,7 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music and video on groups through the new Telegram's video chats!**
+💭 I'm [{BOT_NAME}](https://t.me/{BOT_USERNAME}) .I will help you to play music and video music in your group efficiently.Just add me to your group and make me as a admn woth full permisiion!**
 
 💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
 
@@ -32,15 +32,12 @@ async def cbstart(_, query: CallbackQuery):
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
                         "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
-                    InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
+                   
                 ],
                 [
                     InlineKeyboardButton(
@@ -69,7 +66,7 @@ async def cbguides(_, query: CallbackQuery):
 
 💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}**
 
-⚡ __Powered by {BOT_NAME} A.I__""",
+⚡ __Powered by @i_am_albin_praveen ...@musicwithalby""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
