@@ -44,7 +44,6 @@ async def give_sysinfo(client, message):
 **Hostname :** `{hostname}`
 **IP :** `{ip_address}`
 **Mac :** `{mac_address}`
-**Processor :** `{processor}`
 **Ram : ** `{ram}`
 **CPU :** `{cpu_len}`
 **CPU FREQ :** `{cpu_freq}`
