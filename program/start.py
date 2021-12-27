@@ -53,10 +53,8 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""[✨](https://telegra.ph/file/005de39b81113102c30d7.jpg) **Welcome {message.from_user.mention()} !**\n
-[💭](https://telegra.ph/file/005de39b81113102c30d7.jpg) [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **Allows you to play music and video on groups through the new Telegram's video chats!**
-
+💭 I'm [{BOT_NAME}](https://t.me/{BOT_USERNAME}) .I will help you to play music and video music in your group efficiently.Just add me to your group and make me as a admn woth full permisiion!**
 💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
-
 🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**
 """,
         reply_markup=InlineKeyboardMarkup(
@@ -70,16 +68,10 @@ async def start_(client: Client, message: Message):
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
                     InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
                         "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🌐 Developer", url="https://t.me/i_am_albin_praveen"
                     )
                 ],
             ]
