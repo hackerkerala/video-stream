@@ -48,5 +48,4 @@ async def give_sysinfo(client, message):
 **CPU :** `{cpu_len}`
 **CPU FREQ :** `{cpu_freq}`
 **DISK :** `{disk}`
-    """
-    )
+    """)
