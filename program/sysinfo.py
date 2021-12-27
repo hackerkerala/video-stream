@@ -34,7 +34,7 @@ async def give_sysinfo(client, message):
     psutil.disk_io_counters()
     disk = f"{humanbytes(du.used)} / {humanbytes(du.total)} " f"({du.percent}%)"
     cpu_len = len(psutil.Process().cpu_affinity())
-    await message.reply_text(
+    await message.reply(
         "🤖 (https://telegra.ph/file/005de39b81113102c30d7.jpg) bot status:\n"
         f"• uptime: {uptime}\n"
         f"• start time: {START_TIME_ISO}"
