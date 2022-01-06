@@ -8,7 +8,12 @@ from config import (
     OWNER_ID,
     SUDO_USERS,
 )
-
+app = Client(
+    "MusicBot",
+    API_ID,
+    API_HASH,
+    bot_token=BOT_TOKEN,
+)
 
 def initialize():
     global dbb
