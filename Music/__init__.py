@@ -1,3 +1,6 @@
+from pyrogram import Client
+from pyrogram import Client as Bot
+
 import config
 from config import (
     API_HASH,
