@@ -1,3 +1,4 @@
+from config import MONGO_DB_URI as mango
 from pyrogram import Client
 from pyrogram import Client as Bot
 
