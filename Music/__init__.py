@@ -6,6 +6,7 @@ from config import (
     LOG_GROUP_ID,
     MONGO_DB_URI,
     SUDO_USERS,
+    OWNER_ID
 )
 
 app = Client(
