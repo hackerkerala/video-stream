@@ -5,7 +5,6 @@ from config import (
     BOT_TOKEN,
     LOG_GROUP_ID,
     MONGO_DB_URI,
-    OWNER_ID,
     SUDO_USERS,
 )
 
