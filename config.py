@@ -9,6 +9,7 @@ load_dotenv()
 admins = {}
 SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO")
 BOT_NAME = getenv("BOT_NAME", "Video Stream")
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
